@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 const findByType = (children, component) => {
   const result = [];
@@ -17,7 +17,7 @@ const findByType = (children, component) => {
 };
 
 const Title = () => null;
-Title.displayName = "Title";
+Title.displayName = 'Title';
 
 class Article extends Component {
   renderTitle() {
@@ -42,6 +42,9 @@ class App extends Component {
       <div className="App">
         <Article>
           <Article.Title>React sub-components without context</Article.Title>
+          {/* The following div will not render with this sub-component pattern
+          thanks to the findByType util */}
+          <div> Hello </div>
         </Article>
       </div>
     );
