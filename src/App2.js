@@ -12,7 +12,7 @@ class App extends Component {
       subtitle: (
         <div>Let's make simpler and more flexible React components</div>
       ),
-      author: "Maxime Heckel",
+      author: "Maxime Heckel - @MaximeHeckel",
       date: <i>April 2018</i>,
       content: <p>{text}</p>
     };
